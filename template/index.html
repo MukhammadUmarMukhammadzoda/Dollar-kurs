@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obmennik</title>
+</head>
+<body>
+    <table width="100%"
+    style="border:1px solid">
+        <tr>
+            <td><h4>Banklar</h4></td>
+               <td><h4>Dollar Olish</h4></td> <td><h4>Dollar Sotish</h4></td>
+                <td><h4>Euro Olish</h4></td>
+                <td><h4>Euro Sotish</h4></td>
+        </tr>
+        {% for data in datas %}
+        <tr>
+            <td  style="padding:5px">{{data.bank}}</td>
+            <td style="padding:5px">{{data.dollar_olish}}</td>
+            <td style="padding:5px">{{data.dollar_sotish}}</td>
+            <td style="padding:5px">{{data.euro_olish}}</td>
+            <td style="padding:5px">{{data.euro_sotish}}</td>
+        </tr>
+
+ 
+        {% endfor %}
+    </table>
+</body>
+
+</html>
